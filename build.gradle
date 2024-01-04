@@ -8,7 +8,16 @@ group = 'com.reactivespring'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	sourceCompatibility = '21'
+	sourceCompatibility = '17'
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+idea {
+	module {
+		downloadJavadoc = true
+		downloadSources = true
+	}
 }
 
 configurations {
@@ -27,7 +36,7 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
+//	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
 	testImplementation 'io.projectreactor:reactor-test'
 }
 
