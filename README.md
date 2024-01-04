@@ -27,3 +27,11 @@
   * Processor
     * Interface combination of subscriber and publisher
   * All of these interfaces are a contract to implement the rules for reactive streams
+  * Reactive libraries implement this specification
+    * Project Reactor, RxJava, Flow class
+  
+## Project Reactor
+ * reactor-core implements reactive stream specification
+ * Flux and Mono are the implementation classes
+ * Flux represents 0 to N elements
+ * Mono represents 0 to 1 element
