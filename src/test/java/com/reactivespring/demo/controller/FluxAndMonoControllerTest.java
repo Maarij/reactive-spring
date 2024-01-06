@@ -97,7 +97,6 @@ public class FluxAndMonoControllerTest {
 
     @Test
     public void mono() {
-
         Integer expectedValue = 1;
 
         webTestClient.get().uri("/mono")
